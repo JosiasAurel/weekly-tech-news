@@ -2,7 +2,6 @@ import requests
 from datetime import datetime
 import sqlite3
 import json
-from pprint import pprint
 from bs4 import BeautifulSoup
 import sys
 
