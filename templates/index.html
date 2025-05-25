@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Past Week's News</title>
+</head>
+<body>
+    <h1>Top HN/Lobsters News From Past Week</h1>
+    <ul>
+        {% for article in articles %}
+            <li>
+                <a href="{{ article[2] }}" target="_blank">{{ article[1] }}</a>
+            </li>
+            <br>
+        {% endfor %}
+    </ul>
+</body>
+</html>
