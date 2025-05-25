@@ -16,7 +16,3 @@ async def read_index(request: Request):
 async def health_check(request: Request):
     get_and_write_news()
     return {"status": "ok", "message": "News entries updated successfully"}
-
-# Optional: run the server if executed directly
-if __name__ == "__main__":
-    uvicorn.run("main:app", reload=True)
